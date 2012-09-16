@@ -35,7 +35,7 @@ def main(argv):
 				print '\t"%s" -- "%s";' % (friends[fid].encode('utf-8'), mutual['name'].encode('utf-8'))
 				edges[friends[fid]].append(mutual['name'])
 		if not has_mutual:
-			print '\t"%s"' % friends[fid].encode('utf-8')
+			print '\t"%s";' % friends[fid].encode('utf-8')
 	print '}'
 
 if __name__ == '__main__':
